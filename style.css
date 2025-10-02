@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  color: rgba(232, 147, 36, 0.89);
+  font-size: 45px;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgba(37, 37, 114, 0.619);
+}
+
+footer {
+  background-color: rgba(37, 37, 114, 0.619);
+  padding-top: 35px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: larger;
+}
+
+.sidebar {
+  grid-template-columns: 1fr 2fr;
+}
+
+li {
+  list-style-type: none;
+}
