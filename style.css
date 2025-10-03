@@ -78,16 +78,26 @@ footer {
 p {
   line-height: 1.6;
   line-height: 28px;
-  /* This means 1.6 times the font size */
 }
 
-@media screen and (min-width: 601px) and (max-width: 900px) {
+@media screen and (min-width: 609px) and (max-width: 900px) {
   .grid-container {
-    grid-template-columns: 1fr 2fr 3fr 4fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   .sidebar {
-    padding: 10px;
-    font-size: 14px;
+    font-size: 18px;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-areas:
+      "box1"
+      "main"
+      "sidebar"
+      "footer";
+    grid-template-columns: 1fr;
   }
 }
